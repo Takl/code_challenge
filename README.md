@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic rails app with a single route leading to the /me endpoint.
 
-Things you may want to cover:
+Things to be done:
 
-* Ruby version
+* Set up a database of your choosing to be used for storing user data (username/encrypted passwords)
 
-* System dependencies
+* The /me endpoint should be authenticated using whatever method of user authentication you are comfortable with
 
-* Configuration
+* When a user makes an authenticated request to the /me endpoint, return a json payload greeting the user with their name (replace the current placeholder)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* When a request is made with failing authentication, an appropriate error is returned
