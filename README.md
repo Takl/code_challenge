@@ -34,7 +34,7 @@ Things to be done:
 
 2. Using the server 45.79.214.242 with the login root and password mE_vzkm2x7wxs.MUPZ2_ :
 
-		 - Configure the server for SSH public key authentication.
+		 - Configure the server for SSH public key authentication. [Done]
 		 - Add our public key as well as the one provided below	 
 		 - Install NGINX and Docker and configure them both to automatically start at boot. [Done]
 		 	sudo systemctl enable docker
