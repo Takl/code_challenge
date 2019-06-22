@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   def me
-    render json: { message: 'Hello (user_name)'}
+    @user = User.find(params[:id])
+    msg = 'Hello ' + @user.username
+    render json: { message: msg}
   end
 end

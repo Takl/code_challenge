@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/me' => 'users#me'
+  get '/me/:id' => 'users#me'
 end
