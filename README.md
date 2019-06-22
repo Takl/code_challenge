@@ -6,6 +6,19 @@ Things to be done:
 
 * Set up a database of your choosing to be used for storing user data (username/encrypted passwords)
 
+
+		CREATE TABLE `users` (
+		`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+		`username` varchar(255) NOT NULL,
+		`pswd` varchar(255) DEFAULT NULL,
+		PRIMARY KEY (`id`),
+		UNIQUE KEY `email` (`username`)
+		) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
+
+		INSERT INTO `users` (`username`, `pswd`) VALUES ('laura.gasslein@gmail.com', MD5('pass123'));
+		INSERT INTO `users` (`username`, `pswd`) VALUES ('lauraalexander28@comcast.net', MD5('shr54q!'));
+
+
 * The /me endpoint should be authenticated using whatever method of user authentication you are comfortable with
 
 * When a user makes an authenticated request to the /me endpoint, return a json payload greeting the user with their name (replace the current placeholder)
