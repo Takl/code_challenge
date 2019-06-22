@@ -31,13 +31,14 @@ Things to be done:
 
 2. Using the server 45.79.214.242 with the login root and password mE_vzkm2x7wxs.MUPZ2_ :
 Configure the server for SSH public key authentication.
+https://laura.takl.dev/
 	 - Add our public key as well as the one provided below
-Install NGINX and Docker and configure them both to automatically start at boot.
-Using the default configuration for NGINX, create a reverse proxy that points to Docker image.
-Configure NGINX so that the default server name is laura.takl.dev
-Setup and configure certbot for the given domain name. 
-	- HTTP traffic should be forwarded to HTTPS by default
-	- Configure cert bot so that it will auto-renew the certificate.
+	 - Install NGINX and Docker and configure them both to automatically start at boot.
+	 - Using the default configuration for NGINX, create a reverse proxy that points to Docker image.
+	 - Configure NGINX so that the default server name is laura.takl.dev
+	 - Setup and configure certbot for the given domain name. 
+	 - HTTP traffic should be forwarded to HTTPS by default
+	 - Configure cert bot so that it will auto-renew the certificate.
 Keep in mind the best security practices when setting up the server.
 
 Public Key:
