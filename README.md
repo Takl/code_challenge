@@ -19,7 +19,7 @@ Things to be done:
 		INSERT INTO `users` (`username`, `pswd`) VALUES ('lauraalexander28@comcast.net', MD5('shr54q!'));
 
 
-* The /me endpoint should be authenticated using whatever method of user authentication you are comfortable with 
+* The /me endpoint should be authenticated using whatever method of user authentication you are comfortable with [Done but lamely]
 
 		Instinctively, because it's a custom route/endpoint, I would do this with authtoken... For now just made  		  a login/password box, which I know is extremely dumb, how's this usually done in Rails/default method? 
 
@@ -36,7 +36,8 @@ Things to be done:
 
 		 - Configure the server for SSH public key authentication.
 		 - Add our public key as well as the one provided below	 
-		 - Install NGINX and Docker and configure them both to automatically start at boot. 
+		 - Install NGINX and Docker and configure them both to automatically start at boot. [Done]
+		 	sudo systemctl enable docker
 		 - Using the default configuration for NGINX, create a reverse proxy that points to Docker image.
 		 - Configure NGINX so that the default server name is laura.takl.dev [Done]
 		 - Setup and configure certbot for the given domain name. [Done]
