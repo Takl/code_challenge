@@ -26,6 +26,9 @@ Things to be done:
 * When a request is made with failing authentication, an appropriate error is returned
 
 1. Create a docker image for the sample application.
+	sudo docker build . -t rails_junior_code_challenge
+	sudo docker run --name rails_junior_code_challenge-mysql -e MYSQL_ROOT_PASSWORD=w3lcome9 -d mysql:5.5.62
+
 2. Using the server 45.79.214.242 with the login root and password mE_vzkm2x7wxs.MUPZ2_ :
 Configure the server for SSH public key authentication.
 	 - Add our public key as well as the one provided below
