@@ -1,0 +1,10 @@
+<div><img src="rails.jpg" /></div>
+<h1>Login</h1>
+
+<%= form_tag '/me' do %>
+
+  Username: <%= text_field_tag :email %>
+  Password: <%= text_field_tag :password %>
+  <%= submit_tag "Submit" %>
+
+<% end %>
