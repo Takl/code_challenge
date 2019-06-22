@@ -31,21 +31,21 @@ _Things to be done:_
 	sudo docker build . -t rails_junior_code_challenge
 	sudo docker run --name rails_junior_code_challenge-mysql -e MYSQL_ROOT_PASSWORD=w3lcome9 -d mysql:5.5.62
 
-2. [ ] Using the server _45.79.214.242_ with the login  root  and password mE_vzkm2x7wxs.MUPZ2_  :
+2. [ ] Using the server _45.79.214.242_ with the login  ` root`  and password ` mE_vzkm2x7wxs.MUPZ2_ `  :
 
-		 - [x] Configure the server for SSH public key authentication. 
-		 - [x] Add our public key as well as the one provided below	
-		 - [x] Install NGINX and Docker and configure them both to automatically start at boot. 
-		 	` sudo systemctl enable docker` 
-		 - [ ] Using the default configuration for NGINX, create a reverse proxy that points to Docker image.
-		 - [x] Configure NGINX so that the default server name is ` laura.takl.dev `
-		 - [x] Setup and configure certbot for the given domain name. 
-		 	``` echo "#!/bin/bash" >> /etc/init.d/nginx-passenger.sh 
-			echo "sudo /usr/sbin/nginx" >> /etc/init.d/nginx-passenger.sh
-		 	sudo update-rc.d nginx-passenger.sh defaults ```
-		 - [x] HTTP traffic should be forwarded to HTTPS by default ` https://laura.takl.dev/ `
-		 - [x] Configure cert bot so that it will auto-renew the certificate.  
-			``` echo "0 0,12 * * * python -c 'import random; import time; time.sleep(random.random() * 3600)' && 				certbot renew" | sudo tee -a /etc/crontab > /dev/null ```
+	 - [x] Configure the server for SSH public key authentication. 
+	 - [x] Add our public key as well as the one provided below	
+	 - [x] Install NGINX and Docker and configure them both to automatically start at boot. 
+		` sudo systemctl enable docker` 
+	 - [ ] Using the default configuration for NGINX, create a reverse proxy that points to Docker image.
+	 - [x] Configure NGINX so that the default server name is ` laura.takl.dev `
+	 - [x] Setup and configure certbot for the given domain name. 
+			` echo "#!/bin/bash" >> /etc/init.d/nginx-passenger.sh `
+			` echo "sudo /usr/sbin/nginx" >> /etc/init.d/nginx-passenger.sh `
+			` sudo update-rc.d nginx-passenger.sh defaults `
+	 - [x] HTTP traffic should be forwarded to HTTPS by default ` https://laura.takl.dev/ `
+	 - [x] Configure cert bot so that it will auto-renew the certificate.  
+		``` echo "0 0,12 * * * python -c 'import random; import time; time.sleep(random.random() * 3600)' && 				certbot renew" | sudo tee -a /etc/crontab > /dev/null ```
 
 	 
 Keep in mind the best security practices when setting up the server.
