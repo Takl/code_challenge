@@ -1,0 +1,27 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2019-06-21 19:11:30.000000000 Z
+    - 2019-06-21 19:11:30.000000000 Z
+
+---
+users:
+  columns:
+  - id
+  - username
+  - pswd
+  records: 
+  - - 1
+    - laura.gasslein@gmail.com
+    - 32250170a0dca92d53ec9624f336ca24
+  - - 2
+    - lauraalexander28@comcast.net
+    - 94beac9eb2a5a3387245bdb63bb6d554
